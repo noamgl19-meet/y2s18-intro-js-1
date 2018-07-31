@@ -9,7 +9,27 @@
     <h1>JavaScript Arrays</h1>
 
     <script>
-// your code goes here
+    	/*var exited = prompt("tell me three things that your are exited about in meet, with a ', ' between them");
+    	exited = exited.split(", ");
+    	exited.sort();
+    	document.write(exited)
+    	*/
+    	//calc
+    	var numbers = prompt("enter the first number, and the action, and the second number, with a ', ' between them");
+    	numbers = numbers.split(",");
+    	if (numbers[1] == "+"){
+    		var sum = parseFloat(numbers[0]) + parseFloat(numbers[2]);
+    	}
+    	else if (numbers[1] == "-"){
+    		var sum = parseFloat(numbers[0]) - parseFloat(numbers[2]);
+    	}
+    	else if (numbers[1] == "/"){
+    		var sum = parseFloat(numbers[0]) / parseFloat(numbers[2]);
+    	}
+    	else if (numbers[1] == "*"){
+    		var sum = parseFloat(numbers[0]) * parseFloat(numbers[2]);
+    	}
+    	document.write(sum)
     </script>
 </body>
 
