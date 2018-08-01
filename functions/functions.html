@@ -16,8 +16,31 @@ function isLetter(char) {
 }
 
 // Write your isPalindrome function here!
+function isPalindrome(arr)
+{
 
+	for(var x = 0;x<arr.length;x++){
+
+
+		if (arr[x] != arr[arr.length-(x+1)]){
+			return false;
+		}
+		else{
+			arr.split(arr[x]);
+		}
+
+		if(x == arr.length - 1){
+			return true;
+		}
+
+	}
+
+}
+// var arr = ['m','a','d']
+var stri = prompt("enter a word");
+document.write(isPalindrome(stri));
     </script>
+
 </body>
 
 </html>
